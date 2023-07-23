@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,6 +19,12 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/5c95e5cc68.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>Tea House</title>
 
@@ -42,7 +48,39 @@
     </style>
   </head>
   <body class="font-manrope">
-    <header></header>
+    <!-- header section -->
+    <header>
+      <div class="hero">
+        <div class="hero-content flex-col lg:flex-row gap-4">
+          <div>
+            <h1 class="text-7xl font-extrabold">
+              It's good <br />
+              tea time at The <br />
+              Tea House
+            </h1>
+            <p class="py-6">
+              Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+              Your Taste Buds.
+            </p>
+            <button class="btn btn-primary">Explore More</button>
+          </div>
+          <div>
+            <img src="./images/banner.png" class="max-w-sm" />
+            <!-- rating badge -->
+
+            <div
+              class="-mt-20 flex items-center gap-3 drop-shadow-lg bg-white p-5 w-60"
+            >
+              <i class="text-4xl text-amber-400 fa-solid fa-star"></i>
+              <div>
+                <h3 class="text-3xl">5.00</h3>
+                <p>Trust Pilot Ratings</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
   </body>
