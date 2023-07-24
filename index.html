@@ -35,7 +35,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "gradient-start": "#FF8938",
+              "gradient-end": "#F00",
             },
           },
         },
@@ -62,7 +63,11 @@
               Tea and Botanical Solutions Supplier Give Optimum <br />
               Satisfaction To Your Taste Buds.
             </p>
-            <button class="btn btn-primary">Explore More</button>
+            <button
+              class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white"
+            >
+              Explore More
+            </button>
           </div>
           <div>
             <img src="./images/banner.png" class="max-w-sm" />
@@ -174,7 +179,7 @@
       <!-- super client section -->
 
       <section
-        class="my-24 flex flex-col lg:flex-row gap-14 rounded-xl bg-gradient-to-r from-[#FF8938] to-[#F00] px-16 py-20"
+        class="my-24 flex flex-col lg:flex-row gap-14 rounded-xl bg-gradient-to-r from-gradient-start to-gradient-end px-16 py-20"
       >
         <div class="text-white flex items-center lg:pr-28">
           <div class="space-y-5">
@@ -309,6 +314,64 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+
+    <!-- footer section -->
+    <footer class="px-48 py-10 bg-base-200 p-10 text-base-content">
+      <div class="flex justify-between my-24">
+        <img src="./images/cup.png" alt="" />
+        <p>
+          <span class="mr-10 text-2xl"> Ready to get started? </span>
+          <button
+            class="btn bg-gradient-to-r from-gradient-start to-gradient-end text-white text-2xl"
+          >
+            Get Started
+          </button>
+        </p>
+      </div>
+      <div class="footer">
+        <div>
+          <span class="footer-title">Services</span>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </div>
+        <div>
+          <span class="footer-title">Company</span>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </div>
+        <div>
+          <span class="footer-title">Legal</span>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </div>
+        <div>
+          <span class="footer-title">Newsletter</span>
+          <div class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="relative">
+              <input
+                type="text"
+                class="py-4 bg-transparent border-b-2 border-black outline-none"
+              />
+              <button
+                class="btn btn-primary absolute top-0 right-0 rounded-full bg-gradient-to-r from-gradient-start to-gradient-end"
+              >
+                <i class="fa-solid fa-circle-chevron-right text-white"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-10 text-center">
+        <p>Copyright © 2023 - All right reserved by ACME Industries Ltd</p>
+      </div>
+    </footer>
   </body>
 </html>
